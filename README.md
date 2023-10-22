@@ -11,3 +11,7 @@ Cohort analysis proves to be valuable because it helps to separate growth metric
 I can convey it to you better with this visual: 
 
 ![image](https://github.com/muratukel/power_bi_cohort_analysis/assets/136103635/dd29039f-0365-407b-a215-5d2484f9aaa8)
+
+In this chart, we are looking at the retained count of customers who signed up for an e-commerce website over a 24-month period. The chart is divided into groups based on the month in which the customers signed up. Each row represents a different group, and each column represents a different month.
+
+The numbers in the chart represent the count of customers who are still active (i.e., not churned) from each group for each month. For example, in the first row (the group of customers who signed up in December), 985 customers were active in the first month, but by the 12th month, only 359 customers were still active.
