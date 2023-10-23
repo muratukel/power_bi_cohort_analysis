@@ -67,6 +67,19 @@ DATEDIFF(
     MONTH
 )
 ```
+
+This DAX expression calculates the month difference between the "First Transaction Month" column and the "Start of Month" column. Here's a step-by-step explanation of the expression:
+
+- `DATEDIFF`: This function calculates the difference between two dates. It can calculate the difference in the specified unit.
+
+- `RELATED(DimCustomers[First Transaction Month])`: First, this expression retrieves the value of the "First Transaction Month" column from the related table, which represents the month when customers made their first transaction.
+
+- `RELATED(DimDate[Start of Month])`: Then, it fetches the value of the "Start of Month" column from the related table, which represents the beginning of the month where the transaction occurred.
+
+- `MONTH`: Finally, it's the third argument of the DATEDIFF function and ensures that the difference is calculated in months.
+
+As a result, this DAX expression calculates the month difference between the month when customers made their first transaction and the start of the transaction month. This difference is useful for determining how many months a customer has been active since their first transaction.
+
 ### Step 2	3️⃣: Create the Cohort Measure
 
 ```DAX
