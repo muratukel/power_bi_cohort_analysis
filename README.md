@@ -10,7 +10,7 @@
 
 I can convey it to you better with this visual: 
 
-![image](https://github.com/muratukel/power_bi_cohort_analysis/assets/136103635/dd29039f-0365-407b-a215-5d2484f9aaa8)
+![image](https://github.com/muratukel/power_bi_cohort_analysis/assets/136103635/57a44cba-8f05-45cb-bf19-e0983945efbb)
 
 ☑️ In this chart, we are looking at the retained count of customers who signed up for an e-commerce website over a 24-month period. The chart is divided into groups based on the month in which the customers signed up. Each row represents a different group, and each column represents a different month.
 
@@ -121,8 +121,7 @@ Retention Rate =
     DIVIDE([Cohort Performance],[New Customers])
 ```
 
-![image](https://github.com/muratukel/power_bi_cohort_analysis/assets/136103635/0f198e17-fe60-48c5-9415-98de205abd22)
-
+![image](https://github.com/muratukel/power_bi_cohort_analysis/assets/136103635/6e6ec3d9-e315-4a0f-bca1-56311d5cb3a1)
 
 ## Step 5️⃣: Analyzing the Results
 
