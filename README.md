@@ -50,3 +50,18 @@ New Customers =
         [Active Customers],
         FactSales[Months Since First Transaction] = 0 )
 ````
+
+### Step 2️⃣: Creating a Period Table and Calendar Table
+
+The next step is to create a period table, which will help you visualize the external months as a list. This list will create a table field ranging from 0 to 24.
+
+To create a Period Table using the 'New Table' function in the Power BI Ribbon, use the following DAX:
+
+```DAX
+Months Since First Transaction = 
+DATEDIFF(
+    RELATED(DimCustomers[First Transaction Month]),
+    RELATED(DimDate[Start of Month]),
+    MONTH
+)
+```
