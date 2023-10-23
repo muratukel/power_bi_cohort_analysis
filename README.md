@@ -80,7 +80,7 @@ This DAX expression calculates the month difference between the "First Transacti
 
 As a result, this DAX expression calculates the month difference between the month when customers made their first transaction and the start of the transaction month. This difference is useful for determining how many months a customer has been active since their first transaction.
 
-### Step 2	3️⃣: Create the Cohort Measure
+### Step 3️⃣: Create the Cohort Measure
 
 ```DAX
 Cohort Performance = 
