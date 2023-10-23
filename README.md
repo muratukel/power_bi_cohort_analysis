@@ -123,6 +123,8 @@ Retention Rate =
 
 ![image](https://github.com/muratukel/power_bi_cohort_analysis/assets/136103635/0f198e17-fe60-48c5-9415-98de205abd22)
 
+Cohort Performance %.png
+
 ## Step 5️⃣: Analyzing the Results
 
 - After visualizing the cohort, you can analyze the results to gain insights into customer behavior over time. When examining aggregate data, you can identify trends and patterns in customer behavior that might not be immediately apparent. For instance, you might notice that customers who sign up in a particular month have a higher likelihood of churning compared to those who sign up in other months. Alternatively, you may observe that customers who purchase a specific product are more likely to make repeat purchases compared to those who purchase other products.
