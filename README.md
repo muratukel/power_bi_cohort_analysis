@@ -98,14 +98,14 @@ return
 ```
 This DAX code creates the cohort measurement that will be used as the third step in cohort analysis. This measurement is used to calculate the number of customers in each group for a specific month. Let's break down the code step by step:
 
-1. The `_minDate` and `_maxDate` variables retrieve the smallest and largest dates from the "Start of Month" column in the `DimDate` table. This determines the time range for the analysis.
+- The `_minDate` and `_maxDate` variables retrieve the smallest and largest dates from the "Start of Month" column in the `DimDate` table. This determines the time range for the analysis.
 
-2. Next, we begin calculating the measurement with the `RETURN` statement. The `CALCULATE` function performs a series of filtering operations and calculates the resulting count of customers.
+- Next, we begin calculating the measurement with the `RETURN` statement. The `CALCULATE` function performs a series of filtering operations and calculates the resulting count of customers.
 
-3. First, the `REMOVEFILTERS` function clears all filters on the "Start of Month" column. This signifies that operations are to be performed for a specific month.
+- First, the `REMOVEFILTERS` function clears all filters on the "Start of Month" column. This signifies that operations are to be performed for a specific month.
 
-4. Subsequently, the `RELATEDTABLE` function returns the "DimCustomers" table, capturing the customers who were active in that month.
+- Subsequently, the `RELATEDTABLE` function returns the "DimCustomers" table, capturing the customers who were active in that month.
 
-5. Finally, by using the "First Transaction Month" column from the `DimCustomers` table, it checks the customers' first transaction month within the range of `_minDate` and `_maxDate`. This calculates the number of customers in a specific cohort.
+- Finally, by using the "First Transaction Month" column from the `DimCustomers` table, it checks the customers' first transaction month within the range of `_minDate` and `_maxDate`. This calculates the number of customers in a specific cohort.
 
 This DAX code is used to calculate how many customers are in a specific cohort for a given month. This measurement is valuable in cohort analysis for observing differences and changes between groups.
