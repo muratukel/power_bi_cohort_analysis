@@ -22,10 +22,15 @@ I can convey it to you better with this visual:
 
 ☑️ What we can take from this is that the critical time for customer retention is three months after the first purchase. Armed with this knowledge, the eCommerce business can now start to address why this is happening and start rolling out new measures to halt the trend. For instance, it might develop a loyalty campaign around the three-month mark to draw customers back in and ward off the march towards ever-fading attention. Adding seasonal campaigns can also increase the number of active customers by attracting their attention.
 
-# Let's do the Steps to Conduct Cohort Analysis
+# Let's do the Steps to Conduct Cohort Analysis 🔄📊
 
 ❗ Before conducting cohort analysis, it's crucial to have a good understanding of the dataset. Once you are well-versed in the dataset's metadata, your workload in cohort analysis will be reduced. In other words, it's essential to perform data cleaning and preprocessing meticulously. Here are some things I pay attention to in my own work on this analysis:
 
 ✏️ Correcting the data types of columns (such as CustomerID and InvoiceDate).
 
-✏️ Filtering out customers who have canceled their subscriptions, as they could lead to misinterpretations in cohort analysis (I filtered out customers with Customer IDs starting with 'C')."
+✏️ Filtering out customers who have canceled their subscriptions, as they could lead to misinterpretations in cohort analysis (I filtered out customers with Customer IDs starting with 'C').
+
+1️⃣ We divide our customers into two main groups: Active Customers and New Customers, as we will analyze these groups based on their initial transaction dates in the following steps.
+
+```DAX
+Active Customers = DISTINCTCOUNT(FactSales[Customer ID])
