@@ -120,3 +120,6 @@ The Retention Rate calculation is done using the following DAX formula:
 Retention Rate = 
     DIVIDE([Cohort Performance],[New Customers])
 ```
+
+![image](https://github.com/muratukel/power_bi_cohort_analysis/assets/136103635/0f198e17-fe60-48c5-9415-98de205abd22)
+
