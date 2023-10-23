@@ -32,13 +32,13 @@ I can convey it to you better with this visual:
 
 ### Step 1️⃣: Creating a Cohort Table
 
-☑️The first step in conducting cohort analysis is to create a cohort table. This table includes a group column that allows you to group customers based on the month they registered or the product they purchased. Additionally, when creating this table, you should generate calculated columns such as "Active Customers" and "New Customers."
+☑️ The first step in conducting cohort analysis is to create a cohort table. This table includes a group column that allows you to group customers based on the month they registered or the product they purchased. Additionally, when creating this table, you should generate calculated columns such as "Active Customers" and "New Customers."
 
-☑️Active Customers: This column represents the total number of active customers within each cohort. Active customers refer to those who continue to make transactions within a specific cohort. This helps identify customer loyalty and those who provide continuous revenue.
+☑️ Active Customers: This column represents the total number of active customers within each cohort. Active customers refer to those who continue to make transactions within a specific cohort. This helps identify customer loyalty and those who provide continuous revenue.
 
-☑️New Customers: This column represents the number of customers who started making transactions within a specific time period in each cohort. This column is essential for measuring customer acquisition and monitoring the behavior of new customers.
+☑️ New Customers: This column represents the number of customers who started making transactions within a specific time period in each cohort. This column is essential for measuring customer acquisition and monitoring the behavior of new customers.
 
-☑️When creating the cohort table, each customer should be assigned to their respective cohort using date fields like the registration date or invoice date. This table enables you to make comparisons between cohorts and analyze customer behaviors in the subsequent steps.
+☑️ When creating the cohort table, each customer should be assigned to their respective cohort using date fields like the registration date or invoice date. This table enables you to make comparisons between cohorts and analyze customer behaviors in the subsequent steps.
 
 ```DAX
 Active Customers = DISTINCTCOUNT(FactSales[Customer ID]
