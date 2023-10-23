@@ -123,7 +123,6 @@ Retention Rate =
 
 ![image](https://github.com/muratukel/power_bi_cohort_analysis/assets/136103635/0f198e17-fe60-48c5-9415-98de205abd22)
 
-Cohort Performance %.png
 
 ## Step 5️⃣: Analyzing the Results
 
