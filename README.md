@@ -33,4 +33,12 @@ I can convey it to you better with this visual:
 1️⃣ We divide our customers into two main groups: Active Customers and New Customers, as we will analyze these groups based on their initial transaction dates in the following steps.
 
 ```DAX
-Active Customers = DISTINCTCOUNT(FactSales[Customer ID])
+Active Customers = DISTINCTCOUNT(FactSales[Customer ID]
+```
+
+```DAX
+New Customers = 
+    CALCULATE(
+        [Active Customers],
+        FactSales[Months Since First Transaction] = 0 )
+````
