@@ -109,3 +109,14 @@ This DAX code creates the cohort measurement that will be used as the third step
 - Finally, by using the "First Transaction Month" column from the `DimCustomers` table, it checks the customers' first transaction month within the range of `_minDate` and `_maxDate`. This calculates the number of customers in a specific cohort.
 
 This DAX code is used to calculate how many customers are in a specific cohort for a given month. This measurement is valuable in cohort analysis for observing differences and changes between groups.
+
+### Step 4️⃣: Visualizing the Cohort
+
+The fourth step is to visualize the results of the cohort analysis. The visualization process includes calculating the Retention Rate to observe the percentage change between 0 to 24 months. This step is essential to visually express how long customers remain active in specific cohorts.
+
+The Retention Rate calculation is done using the following DAX formula:
+
+```DAX
+Retention Rate = 
+    DIVIDE([Cohort Performance],[New Customers])
+```
